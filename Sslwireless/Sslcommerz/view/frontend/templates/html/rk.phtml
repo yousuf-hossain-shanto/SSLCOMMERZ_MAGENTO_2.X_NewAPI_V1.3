@@ -1,0 +1,10 @@
+<?php if($block->getPaymentMethod() == $block->getConfigPaymentData()) {?>
+<div class="rk button">
+	
+<?php
+	# echo "<script>window.location.href = '". $sslcz['GatewayPageURL'] ."';</script>";
+	echo "<meta http-equiv='refresh' content='0;url=".$block->getPostData()."'>";
+	# header("Location: ". $sslcz['GatewayPageURL']);
+?>
+
+<?php } ?>
